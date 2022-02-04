@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="../estilos/Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 </head>
-<body class="gridServicio">
+<body>
     <header><a href="../Index.html"><img class="logo" src="../assets/logo.png.opdownload" alt="logo"></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
     <ul class="menu">
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="preguntas.html">Preguntas</a></li>
@@ -19,43 +23,80 @@
         <li><a href="servicio.html">Servicios</a></li>
         <li><a href="../Index.html">Inicio</a></li>
     </ul>
+</div>
+</div>
 </header>
 
-    <contenido class="contenido2">
-    <img class="plata" src="../assets/dinero.png" alt="Coste" />
-
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
 <h1 class="servicioH1">Coste de los distintos servicios</h1>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-9 col-sm-9">
 <ul class="servicios">
-    <li>mantenimiento de pc= $1500</li>
-    <li>consulta= $600 (precio base)</li>
-    <li>reparacion de monitor= presupuesto dado segun el problema</li>
+    <li >mantenimiento de pc= $1500</li>
+    <li >consulta= $600 (precio base)</li>
+    <li >reparacion de monitor= presupuesto dado segun el problema</li>
 </ul>
+
+</div>
+
+    <div class="col-lg-3 col-sm-3">
+
+    <img class="plata" src="../assets/dinero.png" alt="Coste" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
 <serv class="serv">¿Quiere pedir algun servicio?</serv>
 <br>
 <info class="serv2">Dejenos su pedido y le responderemos con antelacion</info>
 <form class="serviForm" action="" method="" enctype="">
+    <div class="form group">
     <label for="nombre">Nombre:</label>
     <input type="text" name="nombre" placeholder="Juan Miqueas"><br>
+</div>
+    <div class="form group">
     <label for="apellido">Apellido:</label>
     <input type="text" name="apellido" placeholder="Santos"><br>
+</div>
+    <div class="form group">
     <label for="email">Email:</label>
     <input type="email" name="email" placeholder="juan04@gmail.com"><br>
+</div>
+    <div class="form group">
     <servi1>Mantenimiento</servi1>
     <input type="checkbox" name="servi1" value="1" /><br>
+</div>
+    <div class="form group">
     <servi2>Consulta</servi2>
     <input type="checkbox" name="servi2" value="1" /><br>
+</div>
+    <div class="form group">
     <servi3>Reparacion de monitor</servi3>
     <input type="checkbox" name="servi3" value="1"><br>
+</div>
+<div class="form group">
     <label for="acotacion">Acotacion:</label><br>
     <textarea name="acotacion" cols="30" rows="6"></textarea><br>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpiar">
+    <button type="submit" class="btn btn default">Enviar</button>
+    <button type="reset" class="btn btn default">Limpiar</button>
+</div>
 </form>
 
-</contenido>
-
-<footer>    &copy;2021 hecho por: Matias Mendiola   <a href="https://www.facebook.com"><img class="imagen" src="../assets/fb2.png" alt="Facebook"/> </a>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+<footer>    &copy;2021 hecho por: Matias Mendiola  <div class="imagenes"> <a href="https://www.facebook.com"><img class="imagen" src="../assets/fb2.png" alt="Facebook"/> </a>
     <a href="https://www.instagram.com"> <img class="imagen" src="../assets/Instagram.png" alt="Instagram"/> </a>
- <a href="https://www.whatsapp.com"><img class="imagen" src="../assets/whatsapp.png" alt="whatsapp"/></a>  </footer>
+ <a href="https://www.whatsapp.com"><img class="imagen" src="../assets/whatsapp.png" alt="whatsapp"/></a> 
+</div>
+ </footer>
+</div>
+</div>
+</div>
 </body>
 </html>

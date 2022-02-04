@@ -1,6 +1,6 @@
 *{padding:0;
 margin:0;}
-@media (min-width: 1024px){
+
 
 .gridIndex{
 display: grid;
@@ -20,13 +20,13 @@ flex-direction: row-reverse;
 }
 
 ul li{display: inline;
-background-color: rgb(90, 119, 247);
+background-color: rgb(155, 155, 173);
 padding: 8px 15px;
 font-weight: bold;
 margin: 20px 10px 0px 0px;
 }
 ul li:hover{display: inline;
-    background-color: rgb(97, 109, 165);
+    background-color: rgb(112, 113, 116);
     padding: 8px 15px;
     font-weight: bold;
     margin: 20px 10px 0px 0px;
@@ -67,37 +67,22 @@ color: white;
 grid-area: footer;}
 
 .imagen{max-width: 65px;
-    position: relative;
-    left: 65vw;
     margin-left: 1%;
     display: inline;}
+    .imagenes{margin-left: 85%}
 
     /*inicio servicio*/
-.gridServicio{
-    display: grid;
-    grid-template-areas: "cabeza1"
-    "contenido2"
-    "footer";
-}
 
-    .contenido2{
-        grid-area: contenido2;
-    min-height: 85vh;
-    font-family:'Roboto',arial, sans-serif;
-    font-weight: bold;
-    background-color: rgb(240, 240, 240);
+    .plata{max-width: 120px;
     }
-    .plata{max-width: 200px;
-    margin-top: 60px;
-position: absolute;
-left:55vw;}
-    .serviForm{margin: 25px 0px 0px 10px ;}
+    .serviForm{margin: 25px 0px 0px 10px ;
+    min-height: 50vh;}
 .serv{margin-top: 70px;
     font-size: 20px;
 margin-left: 10px;}
 .serv2{font-size: 20px;
     margin-left: 10px;}
-.servicios{margin: 30px 0px 30px 10px;}
+.servicios{margin: 30px 0px 0px 0px;}
 
 .servicioH1{padding: 20px 0px 10px 0px;
 font-size: 38px;
@@ -156,396 +141,22 @@ margin-bottom: 20px;}
     /*fin preguntas*/
 
     /*inicio contacto*/
-.gridContacto{
-    display: grid;
-grid-template-areas: "cabeza1"
-"contenido5"
-"footer";
 
-}
 
 .contenido5{
-    grid-area: contenido5;
     background-color: rgb(240, 240, 240);
 }
     .spam{font-family:'Roboto',arial, sans-serif;
         font-size: 26px;
         font-weight: bold;
         padding: 20px 0px 20px 10px;
-    position: relative;
 background-color: rgb(99, 253, 107);}
-div{font-family:'Roboto',arial, sans-serif;
+.spam2{font-family:'Roboto',arial, sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    padding: 20px 0px 20px 10px;}
-    .contactar{padding: 20px 0px 10px 20px;
-        min-height: 65vh;}
+font-weight: bold;}
+
+    .contactar{
+        font-family:'Roboto',arial, sans-serif;
+    font-size: 20px;
+        min-height: 71vh;}
     /*fin contacto*/
-}
-                                        /*tablet*/
-                                        @media (min-width: 481px) and (max-width: 1023px)  {
-
-.gridIndex{
-    display: grid;
-    grid-template-areas:"cabeza1"
-    "contenido"
-    "footer";
-    }
-    
-    header{background-image: linear-gradient(rgb(201, 103, 103), yellow);
-        height: 80px;
-    grid-area: cabeza1;}
-    
-    .menu{
-    display: flex;
-    flex-direction: row-reverse;
-    }
-    
-    ul li{display: inline;
-    background-color: rgb(90, 119, 247);
-    padding: 8px 15px;
-    font-weight: bold;
-    margin: 20px 10px 0px 0px;}
-    
-    .logo{max-width: 65px;
-    margin: 10px 0px 0px 10px;
-    position: absolute;}
-    
-    .contenido1{grid-area: contenido;
-    background-color: rgb(240, 240, 240);}
-    
-    .imagen2{position: relative;
-        left: 24vw;}
-    
-    body{
-        font-family: 'Open Sans',arial,  sans-serif;
-    height: 100%;}
-    .indexH1{font-style: italic;
-    font-size: 48px;
-    padding-left: 10%;
-    text-decoration: underline;
-    background-color: rgb(158, 241, 133);
-    margin-bottom: 20px;}
-    
-    .parrafo{font-size: 18px;
-    font-family:'Roboto',arial, sans-serif;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-bottom: 2%;
-    margin-right: 15%;
-    min-height: 40vh;
-    }
-    
-    footer{background-color: rgb(53, 53, 53);
-    color: white;
-    grid-area: footer;}
-    
-    .imagen{max-width: 40px;
-        position: relative;
-        left: 45vw;
-        margin-left: 1%;
-        display: inline;}
-    
-        /*inicio servicio*/
-    .gridServicio{
-        display: grid;
-        grid-template-areas: "cabeza1"
-        "contenido2"
-        "footer";
-    }
-    
-        .contenido2{
-            grid-area: contenido2;
-        min-height: 88vh;
-        font-family:'Roboto',arial, sans-serif;
-        font-weight: bold;
-        background-color: rgb(240, 240, 240);
-        }
-        .plata{max-width: 100px;
-        margin-top: 130px;
-    position: absolute;
-    left:75vw;}
-        .serviForm{margin: 25px 0px 0px 10px ;
-        font-size: 18px;
-    }
-    .serv{margin-top: 70px;
-        font-size: 20px;
-    margin-left: 10px;}
-    .serv2{font-size: 20px;
-        margin-left: 10px;}
-    .servicios{margin: 10px 0px 20px 0px;
-    padding: 5px;
-font-size: 11px;}
-    
-    .servicioH1{padding: 20px 0px 10px 0px;
-    font-size: 38px;
-    background-color: rgb(141, 209, 109);
-    }
-    
-        /*fin servicio*/
-    
-            /*inicio nosotros*/
-.gridNosotros{
-    display: grid;
-    grid-template-areas: "cabeza1"
-    "contenido3"
-    "footer";
-    }
-    .tecnico{margin: 30px 0px 10px 100px;}
-    .nosotros{font-family:'Roboto',arial, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        min-height: 100vh;
-    margin: 20px ;}
-    .contenido3{
-        grid-area: contenido3;
-        min-height: 88vh;
-    background-color: rgb(240, 240, 240);}
-        /*fin nosotros*/
-    
-        /*inicio preguntas*/
-    .gridPreguntas{
-        display: grid;
-        grid-template-areas: "cabeza1"
-        "contenido4"
-        "footer";
-    }
-    .contenido4{
-        grid-area: contenido4;
-    background-color: rgb(240 , 240, 240);
-    min-height: 88vh;
-    }
-        dt{font-family:'Roboto',arial, sans-serif;
-            font-size: 32px;
-        font-weight: bold;
-    margin-bottom: 8px;
-    margin-top: 3px;
-    text-decoration: underline;}
-    .preguntandose{max-width: 180px;
-    position: absolute;
-    left: 75vw;
-    top: 20vw;}
-    .duda{font-family:'Roboto',arial, sans-serif;
-        font-size: 18px;
-    font-weight: bold;}
-    .pregunta{padding: 20px 0px 10px 20px;
-        font-size: 18px;
-   }
-    .frecuentes{background-color: teal;
-    margin-bottom: 20px;}
-        /*fin preguntas*/
-    
-        /*inicio contacto*/
-    .gridContacto{
-        display: grid;
-    grid-template-areas: "cabeza1"
-    "contenido5"
-    "footer";
-    
-    }
-    
-    .contenido5{
-        grid-area: contenido5;
-        background-color: rgb(240, 240, 240);
-        min-height: 88vh;
-    }
-        .spam{font-family:'Roboto',arial, sans-serif;
-            font-size: 26px;
-            font-weight: bold;
-            padding: 20px 0px 20px 10px;
-        position: relative;
-    background-color: rgb(99, 253, 107);}
-    div{font-family:'Roboto',arial, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 20px 0px 20px 10px;}
-        .contactar{padding: 20px 0px 10px 20px;
-        font-size: 18px;}
-        /*fin contacto*/
-}
-                                            /*Celular*/
-                                            @media (max-width: 480px){
-.gridIndex{
-    display: grid;
-    grid-template-areas:"cabeza1"
-    "contenido"
-    "footer";
-    }
-    
-    header{background-image: linear-gradient(rgb(201, 103, 103), yellow);
-        height: 60px;
-    grid-area: cabeza1;}
-    
-    .menu{
-    display: flex;
-    flex-direction: row-reverse;
-
-    }
-    
-    ul li{display: inline;
-        font-size: 10px;
-    background-color: rgb(90, 119, 247);
-    padding: 4px 4px;
-    font-weight: bold;
-    margin: 20px 5px 0px 0px;}
-    
-    .logo{max-width: 45px;
-    margin: 5px 0px 0px 5px;
-    position: absolute;}
-    
-    .contenido1{grid-area: contenido;
-    background-color: rgb(240, 240, 240);}
-    
-    .imagen2{position: relative;
-        left: 10vw;
-    max-width: 250px;}
-    
-    body{
-        font-family: 'Open Sans',arial,  sans-serif;
-    height: 100%;}
-    .indexH1{font-style: italic;
-    font-size: 22px;
-    padding-left: 3%;
-    text-decoration: underline;
-    background-color: rgb(158, 241, 133);
-    margin-bottom: 20px;}
-    
-    .parrafo{font-size: 18px;
-    font-family:'Roboto',arial, sans-serif;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-bottom: 2%;
-    margin-right: 15%;
-    min-height: 21vh;
-    }
-    
-    footer{background-color: rgb(53, 53, 53);
-    color: white;
-    grid-area: footer;
-font-size: 10px;}
-    
-    .imagen{max-width: 40px;
-        position: relative;
-        left: 5vw;
-        margin-left: 1%;
-        display: inline;}
-    
-        /*inicio servicio*/
-    .gridServicio{
-        display: grid;
-        grid-template-areas: "cabeza1"
-        "contenido2"
-        "footer";
-    }
-    
-        .contenido2{
-            grid-area: contenido2;
-        min-height: 85vh;
-        font-family:'Roboto',arial, sans-serif;
-        font-weight: bold;
-        background-color: rgb(240, 240, 240);
-        }
-        .plata{max-width: 50px;
-        margin-top: 90px;
-    position: absolute;
-    left:84vw;}
-        .serviForm{margin: 25px 0px 0px 10px ;
-        font-size: 14px;}
-    .serv{margin-top: 70px;
-        font-size: 20px;
-    margin-left: 10px;}
-    .serv2{font-size: 20px;
-        margin-left: 10px;}
-    .servicios{
-        margin: 10px 0px 20px 10px;
-    font-size: 18px;}
-    
-    .servicioH1{padding: 5px 0px 10px 0px;
-    font-size: 14px;
-    background-color: rgb(141, 209, 109);
-    }
-    
-        /*fin servicio*/
-    
-           /*inicio nosotros*/
-.gridNosotros{
-    display: grid;
-    grid-template-areas: "cabeza1"
-    "contenido3"
-    "footer";
-    }
-    .tecnico{margin: 30px 0px 10px 20px;
-    max-width: 220px;}
-    .nosotros{font-family:'Roboto',arial, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        min-height: 100vh;
-    margin: 20px ;}
-    .contenido3{
-        grid-area: contenido3;
-        min-height: 85vh;
-    background-color: rgb(240, 240, 240);}
-        /*fin nosotros*/
-    
-        /*inicio preguntas*/
-    .gridPreguntas{
-        display: grid;
-        grid-template-areas: "cabeza1"
-        "contenido4"
-        "footer";
-    }
-    .contenido4{
-        grid-area: contenido4;
-    background-color: rgb(240 , 240, 240);
-    min-height: 85vh;
-    }
-        dt{font-family:'Roboto',arial, sans-serif;
-            font-size: 18px;
-        font-weight: bold;
-    margin-bottom: 8px;
-    margin-top: 3px;
-    text-decoration: underline;}
-    dd{font-size: 14px;}
-    .preguntandose{max-width: 100px;
-    position: absolute;
-    left: 70vw;
-    top: 37vw;}
-    .duda{font-family:'Roboto',arial, sans-serif;
-        font-size: 16px;
-    font-weight: bold;}
-    .pregunta{padding: 20px 0px 10px 20px;
-    }
-    .frecuentes{background-color: teal;
-    margin-bottom: 20px;}
-        /*fin preguntas*/
-    
-        /*inicio contacto*/
-    .gridContacto{
-        display: grid;
-    grid-template-areas: "cabeza1"
-    "contenido5"
-    "footer";
-    
-    }
-    
-    .contenido5{
-        grid-area: contenido5;
-        background-color: rgb(240, 240, 240);
-        min-height: 86vh;
-    }
-        .spam{font-family:'Roboto',arial, sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 20px 0px 20px 10px;
-        position: relative;
-    background-color: rgb(99, 253, 107);}
-    div{font-family:'Roboto',arial, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 20px 0px 20px 10px;}
-        .contactar{padding: 20px 0px 10px 20px;
-        }
-        /*fin contacto*/
-        }
