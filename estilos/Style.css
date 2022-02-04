@@ -117,12 +117,12 @@ grid-template-areas: "cabeza1"
 .nosotros{font-family:'Roboto',arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    min-height: 100vh;
-margin: 20px ;}
+margin: 0% 1% 0% 1% ;}
 .contenido3{
     grid-area: contenido3;
     min-height: 85vh;
 background-color: rgb(240, 240, 240);}
+.tituloNos{margin-left: 1%;}
     /*fin nosotros*/
 
     /*inicio preguntas*/
