@@ -2,7 +2,6 @@
 margin:0;}
 
 
-
 header{
     height: 9vh;
 background-image: linear-gradient( rgb(201, 103, 103), yellow);}
@@ -17,10 +16,12 @@ background-color: rgb(155, 155, 173);
 padding: 8px 10px;
 font-weight: bold;
 margin: 20px 10px 0px 0px;
-width: 5%;
 text-align: center;
 font-size: 1.1vw;
 }
+
+
+
 ul li:hover{display: inline;
     background-color: rgb(112, 113, 116);
     padding: 8px 10px;
@@ -32,8 +33,7 @@ ul li:hover{display: inline;
 margin: 10px 0px 0px 10px;
 position: absolute;}
 
-.contenido1{grid-area: contenido;
-background-color: rgb(240, 240, 240);}
+.contenido1{background-color: rgb(240, 240, 240);}
 
 .imagen2{position: relative;
     left: 24vw;
@@ -60,8 +60,7 @@ min-height: 21vh;
 }
 
 footer{background-color: rgb(53, 53, 53);
-color: white;
-grid-area: footer;}
+color: white;}
 
 .imagen{max-width: 65px;
     margin-left: 1%;
@@ -89,60 +88,42 @@ background-color: rgb(141, 209, 109);
     /*fin servicio*/
 
     /*inicio nosotros*/
-.gridNosotros{
-display: grid;
-grid-template-areas: "cabeza1"
-"contenido3"
-"footer";
-}
-.tecnico{margin: 30px 0px 10px 100px;}
+
+.tecnico{margin: 1vw 0px 1vw 5vw;}
 .nosotros{font-family:'Roboto',arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
-margin: 0% 1% 0% 1% ;}
-.contenido3{
-    grid-area: contenido3;
-    min-height: 85vh;
-background-color: rgb(240, 240, 240);}
+margin: 0% 1% 0% 1% ;
+min-height: 46vh;}
 .tituloNos{margin-left: 1%;}
     /*fin nosotros*/
 
     /*inicio preguntas*/
-.gridPreguntas{
-    display: grid;
-    grid-template-areas: "cabeza1"
-    "contenido4"
-    "footer";
-}
-.contenido4{
-    grid-area: contenido4;
-background-color: rgb(240 , 240, 240);
-}
+
+
     dt{font-family:'Roboto',arial, sans-serif;
         font-size: 26px;
     font-weight: bold;
 margin-bottom: 8px;
 margin-top: 3px;
 text-decoration: underline;}
-.preguntandose{max-width: 220px;
-position: absolute;
-left: 35vw;
-top: 7vw;}
+
+.preguntandose{max-width: 200px;}
+
 .duda{font-family:'Roboto',arial, sans-serif;
     font-size: 18px;
 font-weight: bold;}
-.pregunta{padding: 20px 0px 10px 20px;
-min-height: 60vh;}
+
+.pregunta{padding: 20px 0px 10px 20px;}
+
+.espacio{min-height: 20vh;}
+
 .frecuentes{background-color: teal;
 margin-bottom: 20px;}
     /*fin preguntas*/
 
     /*inicio contacto*/
 
-
-.contenido5{
-    background-color: rgb(240, 240, 240);
-}
     .spam{font-family:'Roboto',arial, sans-serif;
         font-size: 26px;
         font-weight: bold;
