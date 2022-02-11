@@ -1,140 +1,166 @@
-*{padding:0;
-margin:0;}
+* {
+  padding: 0;
+  margin: 0; }
 
+header {
+  height: 9vh;
+  background-image: linear-gradient(#c96767, yellow); }
 
-header{
-    height: 9vh;
-background-image: linear-gradient( rgb(201, 103, 103), yellow);}
+.menu {
+  display: flex;
+  flex-direction: row-reverse; }
 
-.menu{
-display: flex;
-flex-direction: row-reverse;
-}
-
-ul li{display: inline;
-background-color: rgb(155, 155, 173);
-padding: 8px 10px;
-font-weight: bold;
-margin: 20px 10px 0px 0px;
-text-align: center;
-font-size: 1.1vw;
-}
-
-
-
-ul li:hover{display: inline;
-    background-color: rgb(112, 113, 116);
+ul li {
+  display: inline;
+  background-color: #1f035f;
+  padding: 8px 10px;
+  font-weight: bold;
+  margin: 20px 10px 0px 0px;
+  text-align: center;
+  font-size: 1.1vw; }
+  ul li:hover {
+    display: inline;
+    background-color: #1a2f6e;
     padding: 8px 10px;
     font-weight: bold;
     margin: 20px 10px 0px 0px;
-    transform: scale(1.05,1.05);}
+    transform: scale(1.05, 1.05); }
+  ul li a {
+    color: silver;
+    text-decoration: none; }
 
-.logo{max-width: 7vh;
-margin: 10px 0px 0px 10px;
-position: absolute;}
+.logo {
+  max-width: 7vh;
+  margin: 10px 0px 0px 10px;
+  position: absolute; }
 
-.contenido1{background-color: rgb(240, 240, 240);}
+.fondo {
+  background-color: #f0f0f0; }
 
-.imagen2{position: relative;
-    left: 24vw;
-width: 27%;}
+.imagen2 {
+  position: relative;
+  left: 24vw;
+  width: 27%; }
 
-body{
-    font-family: 'Open Sans',arial,  sans-serif;
-height: 100%;}
-.indexH1{font-style: italic;
-    font-size: 6vmin;
-padding-left: 10%;
-text-decoration: underline;
-background-color: rgb(158, 241, 133);
-margin-bottom: 20px;}
+body {
+  font-family: 'Open Sans',arial,  sans-serif;
+  height: 100%; }
 
-.parrafo{font-size: 18px;
-font-family:'Roboto',arial, sans-serif;
-font-weight: bold;
-margin-top: 30px;
-margin-left: 10%;
-margin-bottom: 2%;
-margin-right: 15%;
-min-height: 21vh;
-}
+.indexH1 {
+  font-style: italic;
+  font-size: 6vmin;
+  padding-left: 10%;
+  text-decoration: underline;
+  background-color: #9ef185; }
 
-footer{background-color: rgb(53, 53, 53);
-color: white;}
+.parrafo {
+  font-size: 18px;
+  font-family: 'Roboto',arial, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  margin-right: 15%;
+  min-height: 21vh; }
 
-.imagen{max-width: 65px;
-    margin-left: 1%;
-    display: inline;}
-    .imagenes{margin-left: 85%}
+footer {
+  background-color: #353535;
+  color: white; }
 
-    /*inicio servicio*/
+.imagen {
+  max-width: 65px;
+  margin-left: 1%;
+  display: inline; }
 
-    .plata{max-width: 35%;
-    }
-    .serviForm{margin: 25px 0px 0px 10px ;
-    min-height: 50vh;}
-.serv{margin-top: 70px;
-    font-size: 20px;
-margin-left: 10px;}
-.serv2{font-size: 20px;
-    margin-left: 10px;}
-.servicios{margin: 30px 0px 0px 0px;}
+.imagenes {
+  margin-left: 85%; }
 
-.servicioH1{padding: 20px 0px 10px 0px;
-font-size: 38px;
-background-color: rgb(141, 209, 109);
-}
+/*inicio servicio*/
+.plata {
+  max-width: 35%; }
 
-    /*fin servicio*/
+.serviForm {
+  margin: 25px 0px 0px 10px;
+  min-height: 50vh; }
 
-    /*inicio nosotros*/
+.serv {
+  margin-top: 70px;
+  font-size: 20px;
+  margin-left: 10px; }
 
-.tecnico{margin: 1vw 0px 1vw 5vw;}
-.nosotros{font-family:'Roboto',arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-margin: 0% 1% 0% 1% ;
-min-height: 46vh;}
-.tituloNos{margin-left: 1%;}
-    /*fin nosotros*/
+.serv2 {
+  font-size: 20px;
+  margin-left: 10px; }
 
-    /*inicio preguntas*/
+.servicios {
+  margin: 30px 0px 0px 0px;
+  color: #cebcbc; }
 
+.servicioH1 {
+  padding: 20px 0px 10px 0px;
+  font-size: 38px;
+  background-color: #8dd16d; }
 
-    dt{font-family:'Roboto',arial, sans-serif;
-        font-size: 26px;
-    font-weight: bold;
-margin-bottom: 8px;
-margin-top: 3px;
-text-decoration: underline;}
+/*fin servicio*/
+/*inicio nosotros*/
+.tecnico {
+  margin: 1vw 0px 1vw 5vw; }
 
-.preguntandose{max-width: 200px;}
+.nosotros {
+  font-family: 'Roboto',arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0% 1% 0% 1%;
+  min-height: 46vh; }
 
-.duda{font-family:'Roboto',arial, sans-serif;
-    font-size: 18px;
-font-weight: bold;}
+.tituloNos {
+  margin-left: 1%; }
 
-.pregunta{padding: 20px 0px 10px 20px;}
+/*fin nosotros*/
+/*inicio preguntas*/
+dt {
+  font-family: 'Roboto',arial, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 3px;
+  text-decoration: underline; }
 
-.espacio{min-height: 20vh;}
+.preguntandose {
+  max-width: 200px; }
 
-.frecuentes{background-color: teal;
-margin-bottom: 20px;}
-    /*fin preguntas*/
+.duda {
+  font-family: 'Roboto',arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold; }
 
-    /*inicio contacto*/
+.pregunta {
+  padding: 20px 0px 10px 20px; }
 
-    .spam{font-family:'Roboto',arial, sans-serif;
-        font-size: 26px;
-        font-weight: bold;
-        padding: 20px 0px 20px 10px;
-background-color: rgb(99, 253, 107);}
-.spam2{font-family:'Roboto',arial, sans-serif;
-    font-size: 20px;
-font-weight: bold;}
+.espacio {
+  min-height: 20vh; }
 
-    .contactar{
-        font-family:'Roboto',arial, sans-serif;
-    font-size: 20px;
-        min-height: 71vh;}
-    /*fin contacto*/
+.frecuentes {
+  background-color: teal;
+  margin-bottom: 20px; }
+
+/*fin preguntas*/
+/*inicio contacto*/
+.spam {
+  font-family: 'Roboto',arial, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 20px 0px 20px 10px;
+  background-color: #63fd6b; }
+
+.spam2 {
+  font-family: 'Roboto',arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.contactar {
+  font-family: 'Roboto',arial, sans-serif;
+  font-size: 20px;
+  min-height: 71vh; }
+
+/*fin contacto*/
