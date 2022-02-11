@@ -3,12 +3,69 @@
   margin: 0; }
 
 header {
-  height: 9vh;
   background-image: linear-gradient(#c96767, yellow); }
+  header .menu {
+    display: flex;
+    flex-direction: row-reverse; }
+  header ul li {
+    display: inline;
+    background-color: #1f035f;
+    padding: 8px 10px;
+    font-weight: bold;
+    margin: 20px 10px 0px 0px;
+    text-align: center;
+    font-size: 1.1vw; }
+    header ul li:hover {
+      display: inline;
+      background-color: #1a2f6e;
+      padding: 8px 10px;
+      font-weight: bold;
+      margin: 20px 10px 0px 0px;
+      transform: scale(1.05, 1.05); }
+    header ul li a {
+      color: silver;
+      text-decoration: none; }
+  header .logo {
+    max-width: 7vh;
+    margin: 10px 0px 0px 10px;
+    position: absolute; }
 
-.menu {
-  display: flex;
-  flex-direction: row-reverse; }
+.indexH1 {
+  font-style: italic;
+  font-size: 6vmin;
+  padding-left: 10%;
+  text-decoration: underline;
+  background-color: teal; }
+
+.fondo {
+  background-color: #f0f0f0; }
+  .fondo .imagen2 {
+    position: relative;
+    left: 24vw;
+    width: 27%; }
+  .fondo .parrafo {
+    font-size: 18px;
+    font-family: "Roboto", arial, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-right: 15%;
+    min-height: 21vh; }
+
+footer {
+  background-color: #353535;
+  color: white; }
+  footer .imagen {
+    max-width: 65px;
+    margin-left: 1%;
+    display: inline; }
+  footer .imagenes {
+    margin-left: 85%; }
+
+/*inicio servicio*/
+.plata {
+  max-width: 35%; }
 
 ul li {
   display: inline;
@@ -18,66 +75,6 @@ ul li {
   margin: 20px 10px 0px 0px;
   text-align: center;
   font-size: 1.1vw; }
-  ul li:hover {
-    display: inline;
-    background-color: #1a2f6e;
-    padding: 8px 10px;
-    font-weight: bold;
-    margin: 20px 10px 0px 0px;
-    transform: scale(1.05, 1.05); }
-  ul li a {
-    color: silver;
-    text-decoration: none; }
-
-.logo {
-  max-width: 7vh;
-  margin: 10px 0px 0px 10px;
-  position: absolute; }
-
-.fondo {
-  background-color: #f0f0f0; }
-
-.imagen2 {
-  position: relative;
-  left: 24vw;
-  width: 27%; }
-
-body {
-  font-family: 'Open Sans',arial,  sans-serif;
-  height: 100%; }
-
-.indexH1 {
-  font-style: italic;
-  font-size: 6vmin;
-  padding-left: 10%;
-  text-decoration: underline;
-  background-color: #9ef185; }
-
-.parrafo {
-  font-size: 18px;
-  font-family: 'Roboto',arial, sans-serif;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 10%;
-  margin-bottom: 2%;
-  margin-right: 15%;
-  min-height: 21vh; }
-
-footer {
-  background-color: #353535;
-  color: white; }
-
-.imagen {
-  max-width: 65px;
-  margin-left: 1%;
-  display: inline; }
-
-.imagenes {
-  margin-left: 85%; }
-
-/*inicio servicio*/
-.plata {
-  max-width: 35%; }
 
 .serviForm {
   margin: 25px 0px 0px 10px;
@@ -99,7 +96,8 @@ footer {
 .servicioH1 {
   padding: 20px 0px 10px 0px;
   font-size: 38px;
-  background-color: #8dd16d; }
+  background-color: teal;
+  font-size: "Roboto", arial, sans-serif; }
 
 /*fin servicio*/
 /*inicio nosotros*/
@@ -107,7 +105,7 @@ footer {
   margin: 1vw 0px 1vw 5vw; }
 
 .nosotros {
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   margin: 0% 1% 0% 1%;
@@ -119,7 +117,7 @@ footer {
 /*fin nosotros*/
 /*inicio preguntas*/
 dt {
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -130,15 +128,17 @@ dt {
   max-width: 200px; }
 
 .duda {
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10vh;
+  padding-left: 2vh;
+  background-color: #707174; }
 
 .pregunta {
-  padding: 20px 0px 10px 20px; }
-
-.espacio {
-  min-height: 20vh; }
+  padding: 2vh 0px 2vh 5vh;
+  height: 42vh;
+  background-color: #707174; }
 
 .frecuentes {
   background-color: teal;
@@ -147,19 +147,19 @@ dt {
 /*fin preguntas*/
 /*inicio contacto*/
 .spam {
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 26px;
   font-weight: bold;
   padding: 20px 0px 20px 10px;
-  background-color: #63fd6b; }
+  background-color: teal; }
 
 .spam2 {
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 20px;
   font-weight: bold; }
 
 .contactar {
-  font-family: 'Roboto',arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
   font-size: 20px;
   min-height: 71vh; }
 
