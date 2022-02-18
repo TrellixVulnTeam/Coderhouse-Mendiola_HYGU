@@ -1,12 +1,19 @@
 *{padding:0;
     margin:0;}
-    $titulo:teal;
-    $letra:'Roboto',arial, sans-serif;
+    
+    $estilos:(
+    titulo: teal,
+    );
+
+    @mixin images ($width, $margin){
+        width: $width;
+        margin: $margin;
+    }
+
 
 
     header{
-
-    background-image: linear-gradient( rgb(201, 103, 103), yellow);
+    background-image: linear-gradient( rgb(201, 103, 103), yellow);}
     
     .menu{
     display: flex;
@@ -18,8 +25,7 @@
     padding: 8px 10px;
     font-weight: bold;
     margin: 20px 10px 0px 0px;
-    text-align: center;
-    font-size: 1.1vw;
+    font-size: 20px;
 
         &:hover{display: inline;
             background-color: rgb(26, 47, 110);
@@ -33,38 +39,33 @@
     }
     
     
-    .logo{max-width: 7vh;
-    margin: 10px 0px 0px 10px;
+    .logo{@include images(70px, 6px 0px 0px 10px);
     position: absolute;}
-    }
+
     .indexH1{font-style: italic;
-        font-size: 6vmin;
-    padding-left: 10%;
-    text-decoration: underline;
-    background-color: $titulo;
+    padding-left: 10vw;
+    background-color: map-get($estilos, titulo);
 }
     
     .fondo{background-color: rgb(240, 240, 240);
     
-    .imagen2{position: relative;
-        left: 24vw;
-    width: 27%;}
+    .imagen2{@include images(400px,0 0 0 15vw )
+}
     
     .parrafo{font-size: 18px;
-    font-family:$letra;
+    font-family: "Roboto", arial, sans-serif;
     font-weight: bold;
     margin-top: 30px;
     margin-left: 10%;
     margin-bottom: 2%;
     margin-right: 15%;
-    min-height: 21vh;
+    min-height: 31vh;
     }
 }
 
     footer{background-color: rgb(53, 53, 53);
         color: white;
-    .imagen{max-width: 65px;
-        margin-left: 1%;
+    .imagen{@include images(65px, 0 0 0 1%);
         display: inline;}
         .imagenes{margin-left: 85%}
     }
@@ -86,16 +87,12 @@
     .serv{margin-top: 70px;
         font-size: 20px;
     margin-left: 10px;}
-    .serv2{font-size: 20px;
-        margin-left: 10px;}
+    .serv2{@extend .serv;}
     .servicios{margin: 30px 0px 0px 0px;
     color: rgb(206, 188, 188);}
     
     
-    .servicioH1{padding: 20px 0px 10px 0px;
-    font-size: 38px;
-    background-color: $titulo;
-    font-size: $letra;
+    .servicioH1{@extend .indexH1;
     }
     
         /*fin servicio*/
@@ -103,7 +100,7 @@
         /*inicio nosotros*/
     
     .tecnico{margin: 1vw 0px 1vw 5vw;}
-    .nosotros{font-family:$letra;
+    .nosotros{font-family: "Roboto", arial, sans-serif;
         font-size: 18px;
         font-weight: bold;
     margin: 0% 1% 0% 1% ;
@@ -114,7 +111,7 @@
         /*inicio preguntas*/
     
     
-        dt{font-family:$letra;
+        dt{font-family: "Roboto", arial, sans-serif;
             font-size: 26px;
         font-weight: bold;
     margin-bottom: 8px;
@@ -123,7 +120,7 @@
     
     .preguntandose{max-width: 200px;}
     
-    .duda{font-family:$letra;
+    .duda{font-family: "Roboto", arial, sans-serif;
         font-size: 18px;
     font-weight: bold;
 margin-top: 10vh;
@@ -136,23 +133,18 @@ background-color: rgb(112, 113, 116);}
     
 
     
-    .frecuentes{background-color: teal;
-    margin-bottom: 20px;}
+    .frecuentes{@extend .indexH1;}
         /*fin preguntas*/
     
         /*inicio contacto*/
     
-        .spam{font-family:$letra;
-            font-size: 26px;
-            font-weight: bold;
-            padding: 20px 0px 20px 10px;
-    background-color: $titulo;}
-    .spam2{font-family:$letra;
+        .contactoh1{@extend .indexH1;}
+    .spam2{font-family: "Roboto", arial, sans-serif;
         font-size: 20px;
     font-weight: bold;}
     
         .contactar{
-            font-family:$letra;
+            font-family: "Roboto", arial, sans-serif;
         font-size: 20px;
             min-height: 71vh;}
-        /*fin contacto*/
+        /* fin contacto*/

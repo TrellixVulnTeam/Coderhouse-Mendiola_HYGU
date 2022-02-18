@@ -4,45 +4,44 @@
 
 header {
   background-image: linear-gradient(#c96767, yellow); }
-  header .menu {
-    display: flex;
-    flex-direction: row-reverse; }
-  header ul li {
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse; }
+
+ul li {
+  display: inline;
+  background-color: #1f035f;
+  padding: 8px 10px;
+  font-weight: bold;
+  margin: 20px 10px 0px 0px;
+  font-size: 20px; }
+  ul li:hover {
     display: inline;
-    background-color: #1f035f;
+    background-color: #1a2f6e;
     padding: 8px 10px;
     font-weight: bold;
     margin: 20px 10px 0px 0px;
-    text-align: center;
-    font-size: 1.1vw; }
-    header ul li:hover {
-      display: inline;
-      background-color: #1a2f6e;
-      padding: 8px 10px;
-      font-weight: bold;
-      margin: 20px 10px 0px 0px;
-      transform: scale(1.05, 1.05); }
-    header ul li a {
-      color: silver;
-      text-decoration: none; }
-  header .logo {
-    max-width: 7vh;
-    margin: 10px 0px 0px 10px;
-    position: absolute; }
+    transform: scale(1.05, 1.05); }
+  ul li a {
+    color: silver;
+    text-decoration: none; }
 
-.indexH1 {
+.logo {
+  width: 70px;
+  margin: 6px 0px 0px 10px;
+  position: absolute; }
+
+.indexH1, .servicioH1, .frecuentes, .contactoh1 {
   font-style: italic;
-  font-size: 6vmin;
-  padding-left: 10%;
-  text-decoration: underline;
+  padding-left: 10vw;
   background-color: teal; }
 
 .fondo {
   background-color: #f0f0f0; }
   .fondo .imagen2 {
-    position: relative;
-    left: 24vw;
-    width: 27%; }
+    width: 400px;
+    margin: 0 0 0 15vw; }
   .fondo .parrafo {
     font-size: 18px;
     font-family: "Roboto", arial, sans-serif;
@@ -51,14 +50,14 @@ header {
     margin-left: 10%;
     margin-bottom: 2%;
     margin-right: 15%;
-    min-height: 21vh; }
+    min-height: 31vh; }
 
 footer {
   background-color: #353535;
   color: white; }
   footer .imagen {
-    max-width: 65px;
-    margin-left: 1%;
+    width: 65px;
+    margin: 0 0 0 1%;
     display: inline; }
   footer .imagenes {
     margin-left: 85%; }
@@ -80,24 +79,14 @@ ul li {
   margin: 25px 0px 0px 10px;
   min-height: 50vh; }
 
-.serv {
+.serv, .serv2 {
   margin-top: 70px;
-  font-size: 20px;
-  margin-left: 10px; }
-
-.serv2 {
   font-size: 20px;
   margin-left: 10px; }
 
 .servicios {
   margin: 30px 0px 0px 0px;
   color: #cebcbc; }
-
-.servicioH1 {
-  padding: 20px 0px 10px 0px;
-  font-size: 38px;
-  background-color: teal;
-  font-size: "Roboto", arial, sans-serif; }
 
 /*fin servicio*/
 /*inicio nosotros*/
@@ -140,19 +129,8 @@ dt {
   height: 42vh;
   background-color: #707174; }
 
-.frecuentes {
-  background-color: teal;
-  margin-bottom: 20px; }
-
 /*fin preguntas*/
 /*inicio contacto*/
-.spam {
-  font-family: "Roboto", arial, sans-serif;
-  font-size: 26px;
-  font-weight: bold;
-  padding: 20px 0px 20px 10px;
-  background-color: teal; }
-
 .spam2 {
   font-family: "Roboto", arial, sans-serif;
   font-size: 20px;
@@ -163,4 +141,4 @@ dt {
   font-size: 20px;
   min-height: 71vh; }
 
-/*fin contacto*/
+/* fin contacto*/
