@@ -1,6 +1,6 @@
 *{padding:0;
     margin:0;}
-    
+
     $estilos:(
     titulo: teal,
     );
@@ -24,23 +24,36 @@
     background-color: rgb(31, 3, 95);
     padding: 8px 10px;
     font-weight: bold;
-    margin: 20px 10px 0px 0px;
+    margin: 20px 0.6% 0px 0px;
     font-size: 20px;
 
         &:hover{display: inline;
             background-color: rgb(26, 47, 110);
             padding: 8px 10px;
             font-weight: bold;
-            margin: 20px 10px 0px 0px;
+            margin: 20px 0.6% 0px 0px;
             transform: scale(1.05,1.05);}
 
         a{color: rgb(192, 192, 192);
         text-decoration: none;}
     }
+    @media (max-width: 768px){
+       ul li{font-size: 15px;}
+    }
+    @media (max-width: 576px){
+        ul li{font-size: 2.2vw;
+        padding: 1.8vw 2.8vw}
+     }
     
     
     .logo{@include images(70px, 6px 0px 0px 10px);
     position: absolute;}
+    @media (max-width: 1400px)
+    {     .logo{@include images(60px, 6px 0px 0px 10px);
+        position: absolute;}}
+        @media (max-width: 768px)
+        {     .logo{@include images(50px, 6px 0px 0px 10px);
+            position: absolute;}}
 
     .indexH1{font-style: italic;
     padding-left: 10vw;
@@ -49,8 +62,9 @@
     
     .fondo{background-color: rgb(240, 240, 240);
     
-    .imagen2{@include images(400px,0 0 0 15vw )
-}
+    .imagen2{@include images(400px,0 0 0 15vw )}
+
+@media (max-width: 600px){    .imagen2{@include images(66vw,0 0 0 15vw )}}
     
     .parrafo{font-size: 18px;
     font-family: "Roboto", arial, sans-serif;
@@ -74,14 +88,7 @@
     
         .plata{max-width: 35%;
         }
-        ul li {
-            display: inline;
-            background-color: #1f035f;
-            padding: 8px 10px;
-            font-weight: bold;
-            margin: 20px 10px 0px 0px;
-            text-align: center;
-            font-size: 1.1vw; }
+
         .serviForm{margin: 25px 0px 0px 10px ;
         min-height: 50vh;}
     .serv{margin-top: 70px;
@@ -90,16 +97,16 @@
     .serv2{@extend .serv;}
     .servicios{margin: 30px 0px 0px 0px;
     color: rgb(206, 188, 188);}
+    .centrado{text-align: center;}
     
-    
-    .servicioH1{@extend .indexH1;
-    }
+    .servicioH1{@extend .indexH1;}
     
         /*fin servicio*/
     
         /*inicio nosotros*/
     
     .tecnico{margin: 1vw 0px 1vw 5vw;}
+    @media (max-width: 600px){    .tecnico{@include images(66vw,2vw 0 1vw 5vw )}}
     .nosotros{font-family: "Roboto", arial, sans-serif;
         font-size: 18px;
         font-weight: bold;
