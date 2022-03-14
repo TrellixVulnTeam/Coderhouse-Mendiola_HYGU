@@ -1,9 +1,10 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0; }
 
-header {
-  background-image: linear-gradient(#c96767, yellow); }
+.header {
+  background-color: #414141; }
 
 .menu {
   display: flex;
@@ -11,58 +12,44 @@ header {
 
 ul li {
   display: inline;
-  background-color: #1f035f;
-  padding: 8px 10px;
+  padding: 1px 1px;
   font-weight: bold;
-  margin: 20px 0.6% 0px 0px;
+  margin: 0px 0.5vw 0px 0.6vw;
   font-size: 20px; }
   ul li:hover {
     display: inline;
-    background-color: #1a2f6e;
-    padding: 8px 10px;
+    padding: 1px 1px;
     font-weight: bold;
-    margin: 20px 0.6% 0px 0px;
+    margin: 0px 0.5vw 0px 0.6vw;
     transform: scale(1.05, 1.05); }
   ul li a {
     color: silver;
     text-decoration: none; }
 
-@media (max-width: 768px) {
-  ul li {
-    font-size: 15px; } }
-
-@media (max-width: 576px) {
-  ul li {
-    font-size: 2.2vw;
-    padding: 1.8vw 2.8vw; } }
-
 .logo {
   width: 70px;
-  margin: 6px 0px 0px 10px;
-  position: absolute; }
+  margin: 0px 0px 0px 10px; }
 
 @media (max-width: 1400px) {
   .logo {
     width: 60px;
-    margin: 6px 0px 0px 10px;
-    position: absolute; } }
+    margin: 6px 0px 0px 10px; } }
 
 @media (max-width: 768px) {
   .logo {
     width: 50px;
-    margin: 6px 0px 0px 10px;
-    position: absolute; } }
+    margin: 6px 0px 0px 10px; } }
 
 .indexH1, .servicioH1, .frecuentes, .contactoh1 {
   font-style: italic;
-  padding-left: 10vw;
-  background-color: teal; }
+  padding-left: 14vw;
+  padding-top: 0.5vw; }
 
 .fondo {
-  background-color: #f0f0f0; }
+  background-color: #938172; }
   .fondo .imagen2 {
     width: 400px;
-    margin: 0 0 0 15vw; }
+    margin: 2vh 0 0 15vw; }
   @media (max-width: 600px) {
     .fondo .imagen2 {
       width: 66vw;
@@ -74,8 +61,7 @@ ul li {
     margin-top: 30px;
     margin-left: 10%;
     margin-bottom: 2%;
-    margin-right: 15%;
-    min-height: 31vh; }
+    margin-right: 15%; }
 
 footer {
   background-color: #353535;
@@ -85,32 +71,55 @@ footer {
     margin: 0 0 0 1%;
     display: inline; }
   footer .imagenes {
-    margin-left: 85%; }
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1vw; }
 
 /*inicio servicio*/
-.plata {
-  max-width: 35%; }
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin: 0vw 20vw 0vw 5vw;
+  padding: 1vw 0 1vw 0; }
+
+.imagen3 {
+  max-height: 13vw;
+  margin: 0px 0.5vw 0px 0.5vw; }
+
+.espaciado {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  background-color: #e5dfcd;
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .espaciado {
+    font-size: 20px; }
+  .imagen3 {
+    max-height: 25vw; }
+  .right {
+    margin: 3vw 5vw 3vw 2vw; } }
 
 .serviForm {
   margin: 25px 0px 0px 10px;
   min-height: 50vh; }
 
 .serv, .serv2 {
-  margin-top: 70px;
   font-size: 20px;
   margin-left: 10px; }
-
-.servicios {
-  margin: 30px 0px 0px 0px;
-  color: #cebcbc; }
 
 .centrado {
   text-align: center; }
 
+.servicioH1 {
+  padding-bottom: 1vw; }
+
 /*fin servicio*/
 /*inicio nosotros*/
 .tecnico {
-  margin: 1vw 0px 1vw 5vw; }
+  margin: 1vw 0px 1vw 10vw;
+  width: 30vw; }
 
 @media (max-width: 600px) {
   .tecnico {
@@ -121,14 +130,16 @@ footer {
   font-family: "Roboto", arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  margin: 0% 1% 0% 1%;
-  min-height: 46vh; }
+  margin: 0 12vw 1vw 7vw; }
 
 .tituloNos {
   margin-left: 1%; }
 
 /*fin nosotros*/
 /*inicio preguntas*/
+dl {
+  padding-left: 0.8vw; }
+
 dt {
   font-family: "Roboto", arial, sans-serif;
   font-size: 26px;
@@ -145,24 +156,50 @@ dt {
   font-size: 18px;
   font-weight: bold;
   margin-top: 10vh;
-  padding-left: 2vh;
-  background-color: #707174; }
+  padding: 2.5vh 0px 0px 2vh;
+  background-color: #626266; }
 
 .pregunta {
   padding: 2vh 0px 2vh 5vh;
-  height: 42vh;
-  background-color: #707174; }
+  background-color: #626266; }
 
 /*fin preguntas*/
 /*inicio contacto*/
 .spam2 {
   font-family: "Roboto", arial, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold; }
 
 .contactar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: "Roboto", arial, sans-serif;
   font-size: 20px;
-  min-height: 71vh; }
+  min-height: 40vh; }
+
+.tamaño {
+  margin-left: 10px;
+  position: relative;
+  padding: 30.25%;
+  height: 0;
+  overflow: hidden; }
+
+.tamaño iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%; }
+
+.alto {
+  min-height: 83vh; }
+
+.alto2 {
+  min-height: 80vh; }
+
+@media (max-width: 574px) {
+  .alto2 {
+    min-height: 0vh; } }
 
 /* fin contacto*/

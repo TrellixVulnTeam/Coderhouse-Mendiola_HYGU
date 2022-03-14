@@ -12,8 +12,8 @@
 
 
 
-    header{
-    background-image: linear-gradient( rgb(201, 103, 103), yellow);}
+    .header{
+    background-color:rgb(65, 65, 65);}
     
     .menu{
     display: flex;
@@ -21,48 +21,40 @@
     }
     
     ul li{display: inline;
-    background-color: rgb(31, 3, 95);
-    padding: 8px 10px;
+    padding: 1px 1px;
     font-weight: bold;
-    margin: 20px 0.6% 0px 0px;
+    margin: 0px 0.5vw 0px 0.6vw;
     font-size: 20px;
 
         &:hover{display: inline;
-            background-color: rgb(26, 47, 110);
-            padding: 8px 10px;
+            padding: 1px 1px;
             font-weight: bold;
-            margin: 20px 0.6% 0px 0px;
+            margin: 0px 0.5vw 0px 0.6vw;
             transform: scale(1.05,1.05);}
 
         a{color: rgb(192, 192, 192);
         text-decoration: none;}
     }
-    @media (max-width: 768px){
-       ul li{font-size: 15px;}
-    }
-    @media (max-width: 576px){
-        ul li{font-size: 2.2vw;
-        padding: 1.8vw 2.8vw}
-     }
+
     
     
-    .logo{@include images(70px, 6px 0px 0px 10px);
-    position: absolute;}
+    .logo{@include images(70px, 0px 0px 0px 10px);
+  }
     @media (max-width: 1400px)
     {     .logo{@include images(60px, 6px 0px 0px 10px);
-        position: absolute;}}
+}}
         @media (max-width: 768px)
         {     .logo{@include images(50px, 6px 0px 0px 10px);
-            position: absolute;}}
+}}
 
     .indexH1{font-style: italic;
-    padding-left: 10vw;
-    background-color: map-get($estilos, titulo);
+    padding-left: 14vw;
+    padding-top: 0.5vw;
 }
     
-    .fondo{background-color: rgb(240, 240, 240);
+    .fondo{background-color: rgb(147,129,114);
     
-    .imagen2{@include images(400px,0 0 0 15vw )}
+    .imagen2{@include images(400px,2vh 0 0 15vw )}
 
 @media (max-width: 600px){    .imagen2{@include images(66vw,0 0 0 15vw )}}
     
@@ -73,7 +65,6 @@
     margin-left: 10%;
     margin-bottom: 2%;
     margin-right: 15%;
-    min-height: 31vh;
     }
 }
 
@@ -81,43 +72,58 @@
         color: white;
     .imagen{@include images(65px, 0 0 0 1%);
         display: inline;}
-        .imagenes{margin-left: 85%}
+        .imagenes{display: flex;
+            flex-direction:row-reverse ;
+        margin-right: 1vw;}
     }
     
         /*inicio servicio*/
-    
-        .plata{max-width: 35%;
-        }
+        .right{display: flex;
+            justify-content: space-between;
+    margin: 0vw 20vw 0vw 5vw;
+padding: 1vw 0 1vw 0;}
+
+    .imagen3{max-height: 13vw;
+    margin: 0px 0.5vw 0px 0.5vw;}
+    .espaciado{display: flex;
+    align-items: center;
+font-size: 30px;
+background-color: rgb(229,223,205);
+width: 100%;
+}
+@media (max-width: 768px){.espaciado{font-size: 20px;}
+.imagen3{max-height: 25vw;}
+.right{    margin: 3vw 5vw 3vw 2vw;}}
 
         .serviForm{margin: 25px 0px 0px 10px ;
         min-height: 50vh;}
-    .serv{margin-top: 70px;
+    .serv{
         font-size: 20px;
     margin-left: 10px;}
     .serv2{@extend .serv;}
-    .servicios{margin: 30px 0px 0px 0px;
-    color: rgb(206, 188, 188);}
     .centrado{text-align: center;}
     
-    .servicioH1{@extend .indexH1;}
+    
+    .servicioH1{@extend .indexH1;
+    padding-bottom: 1vw;}
     
         /*fin servicio*/
     
         /*inicio nosotros*/
     
-    .tecnico{margin: 1vw 0px 1vw 5vw;}
+    .tecnico{margin: 1vw 0px 1vw 10vw;
+    width: 30vw;}
     @media (max-width: 600px){    .tecnico{@include images(66vw,2vw 0 1vw 5vw )}}
     .nosotros{font-family: "Roboto", arial, sans-serif;
         font-size: 18px;
         font-weight: bold;
-    margin: 0% 1% 0% 1% ;
-    min-height: 46vh;}
+    margin: 0 12vw 1vw 7vw ;}
     .tituloNos{margin-left: 1%;}
         /*fin nosotros*/
     
         /*inicio preguntas*/
     
-    
+    dl{padding-left: 0.8vw;}
         dt{font-family: "Roboto", arial, sans-serif;
             font-size: 26px;
         font-weight: bold;
@@ -131,12 +137,12 @@
         font-size: 18px;
     font-weight: bold;
 margin-top: 10vh;
-padding-left: 2vh;
-background-color: rgb(112, 113, 116);}
+padding: 2.5vh 0px 0px 2vh;
+background-color: rgb(98,98,102);
+}
     
     .pregunta{padding: 2vh 0px 2vh 5vh;
-    height: 42vh;
-background-color: rgb(112, 113, 116);}
+background-color: rgb(98,98,102);}
     
 
     
@@ -147,11 +153,35 @@ background-color: rgb(112, 113, 116);}
     
         .contactoh1{@extend .indexH1;}
     .spam2{font-family: "Roboto", arial, sans-serif;
-        font-size: 20px;
+        font-size: 24px;
     font-weight: bold;}
     
         .contactar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             font-family: "Roboto", arial, sans-serif;
         font-size: 20px;
-            min-height: 71vh;}
+        min-height: 40vh;
+}
+
+            .tamaño {
+                margin-left: 10px;
+                position: relative;
+                padding: 30.25%;
+                height: 0;
+                overflow: hidden;
+
+            }
+            .tamaño iframe {
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 90%;
+                height: 90%;
+            }
+            .alto{min-height: 83vh;}
+
+            .alto2{min-height: 80vh;}
+            @media (max-width:574px){.alto2{min-height: 0vh}}
         /* fin contacto*/
